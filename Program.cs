@@ -26,12 +26,44 @@ namespace Program
 
     static void DoBlock_2()
     {
-      // add your code here...
+      System.Console.WriteLine("Дана послідовність цілих чисел, за якою слідує 0. Знайти номер мінімального елементу в цій послідовності.");
+
+      int min = int.MaxValue;
+      int minIndex = 0;
+      int currentIndex = 1;
+      int i;
+
+      do
+      {
+        i = Convert.ToInt32(Console.ReadLine());
+        if (i == 0)
+        {
+          break;
+        }
+        if (i < min)
+        {
+          min = i;
+          minIndex = currentIndex;
+        }
+
+
+
+        currentIndex++;
+      } while (i != 0);
+
+      System.Console.WriteLine("Номер мінімального елемента: " + minIndex);
     }
+
 
     static void DoBlock_3()
     {
-      // add your code here...
+      System.Console.WriteLine("S = sin(x + cos(2x + sin(3x + cos(4x + sin(5x + cos(6x +...)...) (до sin(nx) чи cos(nx) включно, sin(nx) чи cos(nx) залежить від парності n);");
+      System.Console.Write("Введіть n: ");
+      int n = Convert.ToInt32(Console.ReadLine());
+      for (int i = 0; i < n; i++)
+      {
+
+      }
     }
 
     static void Main(string[] args)

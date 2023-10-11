@@ -6,8 +6,23 @@ namespace Program
   {
     static void DoBlock_1()
     {
-      // add your code here...
+      System.Console.WriteLine("Дана послідовність з n цілих чисел. Знайти суму елементів з непарними номерами з цієї послідовності.");
+      System.Console.Write("Введіть значення n: ");
+      int n = Convert.ToInt32(Console.ReadLine());
+      int sum = 0;
+
+      for (int i = 1; i <= n; i++)
+      {
+        int k = Convert.ToInt32(Console.ReadLine());
+        if (i % 2 == 1)
+        {
+          sum += k;
+        }
+      }
+
+      System.Console.WriteLine(sum);
     }
+
 
     static void DoBlock_2()
     {

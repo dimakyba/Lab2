@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Lab2\\Lab2.csproj": {}
+    "D:\\Documents\\GitHub\\Lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Lab2\\Lab2.csproj": {
+    "D:\\Documents\\GitHub\\Lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Lab2\\Lab2.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Lab2\\Lab2.csproj",
         "projectName": "Lab2",
-        "projectPath": "C:\\Users\\user\\Desktop\\Lab2\\Lab2.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Lab2\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

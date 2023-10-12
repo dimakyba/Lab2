@@ -1,7 +1,5 @@
 ﻿using System;
 
-namespace Program
-{
   class Program
   {
     static void DoBlock_1()
@@ -60,10 +58,33 @@ namespace Program
       System.Console.WriteLine("S = sin(x + cos(2x + sin(3x + cos(4x + sin(5x + cos(6x +...)...) (до sin(nx) чи cos(nx) включно, sin(nx) чи cos(nx) залежить від парності n);");
       System.Console.Write("Введіть n: ");
       int n = Convert.ToInt32(Console.ReadLine());
-      for (int i = 0; i < n; i++)
+      System.Console.Write("Введіть x: ");
+      int x = Convert.ToInt32(Console.ReadLine());
+      double temp;
+
+      if (n % 2 == 0)
       {
+        temp = (n - 1) * x + Math.Cos(n * x);
 
       }
+      else
+      {
+        temp = (n - 1) * x + Math.Sin(n * x);
+      }
+      for (int i = n - 1; i > 0; i--)
+      {
+        if (i % 2 == 0)
+        {
+
+          temp += Math.Cos((n - 2) * x + temp);
+        }
+        else
+        {
+          temp += Math.Sin((n - 2) * x + temp);
+        }
+      }
+
+
     }
 
     static void Main(string[] args)

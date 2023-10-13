@@ -71,8 +71,8 @@ func DoBlock3() {
 		}
 		n--
 	}
-
-	fmt.Println(math.Sin(solution))
+	solution = math.Sin(solution)
+	fmt.Println(solution)
 }
 
 func main() {

@@ -83,8 +83,8 @@ class Program
       }
       n--;
     }
-
-    System.Console.WriteLine(Math.Sin(solution));
+    solution = Math.Sin(solution);
+    System.Console.WriteLine(solution);
   }
 
   static void Main(string[] args)

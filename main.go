@@ -34,7 +34,7 @@ func DoBlock2() {
 	for i != 0 {
 		fmt.Scan(&i)
 
-		if i < min {
+		if i < min && i != 0 {
 			min = i
 			minIndex = currentIndex
 		}

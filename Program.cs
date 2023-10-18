@@ -34,7 +34,7 @@ class Program
     while (i != 0)
     {
       i = Convert.ToInt32(Console.ReadLine());
-      if (i < min)
+      if (i != 0 && i < min)
       {
         min = i;
         minIndex = currentIndex;
@@ -45,6 +45,7 @@ class Program
 
     System.Console.WriteLine("Номер мінімального елемента: " + minIndex);
   }
+
 
 
   static void DoBlock_3()

@@ -29,25 +29,19 @@ class Program
     int min = int.MaxValue;
     int minIndex = 0;
     int currentIndex = 1;
-    int i;
+    int i = 1;
 
-    do
+    while (i != 0)
     {
       i = Convert.ToInt32(Console.ReadLine());
-      if (i == 0)
-      {
-        break;
-      }
       if (i < min)
       {
         min = i;
         minIndex = currentIndex;
       }
 
-
-
       currentIndex++;
-    } while (i != 0);
+    }
 
     System.Console.WriteLine("Номер мінімального елемента: " + minIndex);
   }

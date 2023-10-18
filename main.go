@@ -29,13 +29,11 @@ func DoBlock2() {
 	min := math.MaxInt32
 	minIndex := 0
 	currentIndex := 1
-	var i int
+	i := 1
 
-	for {
+	for i != 0 {
 		fmt.Scan(&i)
-		if i == 0 {
-			break
-		}
+
 		if i < min {
 			min = i
 			minIndex = currentIndex

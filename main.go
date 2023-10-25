@@ -29,17 +29,18 @@ func DoBlock2() {
 	min := math.MaxInt32
 	minIndex := 0
 	currentIndex := 1
-	i := 1
+	var i int
+	fmt.Scan(&i)
 
 	for i != 0 {
-		fmt.Scan(&i)
 
-		if i < min && i != 0 {
+		if i < min {
 			min = i
 			minIndex = currentIndex
 		}
 
 		currentIndex++
+		fmt.Scan(&i)
 	}
 
 	fmt.Println("Номер мінімального елемента:", minIndex)

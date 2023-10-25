@@ -2,7 +2,7 @@
 
 class Program
 {
-  static void DoBlock_1()
+  static void doBlockOne()
   {
     System.Console.WriteLine("Дана послідовність з n цілих чисел. Знайти суму елементів з непарними номерами з цієї послідовності.");
     System.Console.Write("Введіть значення n: ");
@@ -22,25 +22,25 @@ class Program
   }
 
 
-  static void DoBlock_2()
+  static void doBlockTwo()
   {
     System.Console.WriteLine("Дана послідовність цілих чисел, за якою слідує 0. Знайти номер мінімального елементу в цій послідовності.");
 
     int min = int.MaxValue;
     int minIndex = 0;
     int currentIndex = 1;
-    int i = 1;
+    int i = Convert.ToInt32(Console.ReadLine());
 
     while (i != 0)
     {
-      i = Convert.ToInt32(Console.ReadLine());
-      if (i != 0 && i < min)
+      if (i < min)
       {
         min = i;
         minIndex = currentIndex;
       }
 
       currentIndex++;
+      i = Convert.ToInt32(Console.ReadLine());
     }
 
     System.Console.WriteLine("Номер мінімального елемента: " + minIndex);
@@ -48,7 +48,7 @@ class Program
 
 
 
-  static void DoBlock_3()
+  static void doBlockThree()
   {
     System.Console.WriteLine("S = sin(x + cos(2x + sin(3x + cos(4x + sin(5x + cos(6x +...)...) (до sin(nx) чи cos(nx) включно, sin(nx) чи cos(nx) залежить від парності n);");
     System.Console.Write("Введіть n: ");
@@ -96,15 +96,15 @@ class Program
       {
         case 1:
           Console.WriteLine("Виконую блок 1");
-          DoBlock_1();
+          doBlockOne();
           break;
         case 2:
           Console.WriteLine("Виконую блок 2");
-          DoBlock_2();
+          doBlockTwo();
           break;
         case 3:
           Console.WriteLine("Виконую блок 3");
-          DoBlock_3();
+          doBlockThree();
           break;
         case 0:
           Console.WriteLine("Зараз завершимо, тільки натисніть будь ласка ще раз Enter");
